@@ -6,91 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Par-ou-Impar</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            background-color: rgb(0, 0, 0);
-        }
-        p {
-            color: white;
-        }
-
-        h1 {
-            display: flex;
-            background-color: rgb(9, 200, 95);
-            width: 30rem;
-            height: 10rem;
-            border-radius: 20%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 30rem;
-        }
-
-        .p {
-            color: white;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-        }
-
-
-        h1:hover {
-            box-shadow: 0 0 0.7rem rgb(38, 0, 255);
-            color: white;
-            background-color: darkviolet;
-        }
-
-        .rodape {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-        }
-
-        @media (min-width: 390) and (max-width: 400px) {
-            .div {
-                width: 100vh;
-                height: 50rem;
-            }
-
-            h1 {
-                width: 60rem;
-                height: 10rem;
-
-            }
-
-            .p {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media (max-width: 490px) {
-            h1 {
-                width: 20rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="div">
-    </div>
-    <button class="botao">Recarregar</button>
-    
-    <footer class="rodape">
-        <p>Feito por <span class="rodrigo">Rodrigo</span></p>
-    </footer>
+    <section class="container">
+        <form id="formulario" action="/" method="POST">
+            <label class="single-color gradient" for="numero">Digite um número para verificar se é par ou ímpar.</label>
+            <input type="text" id="numero" name="numero">
 
-    <script src="assets/script.js"></script>
+            <button type="submit">Verificar</button>
+        </form>
+
+        <div id="resultado"></div>
+        <footer><strong>Feito por Rodrigo</strong></footer>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
