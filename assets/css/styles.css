@@ -170,9 +170,18 @@ footer:hover {
     input {
         width: 40rem;
     }
+    input {
+        margin-top: 5rem;
+    }
     footer {
-        margin-top: 15rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
+    }
+    label {
+        margin-top: 10rem;
+    }
+    .red, .green{
+        width: 30rem;
     }
 
 }
@@ -182,9 +191,15 @@ footer:hover {
         width: 30rem;
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 320px) {
     button,
     input {
         width: 25rem;
+    }
+    .red,.green {
+        width: 20rem;
+    }
+    input {
+        margin-top: 5rem;
     }
 }
