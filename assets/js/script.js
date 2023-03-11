@@ -6,8 +6,8 @@ function meuEscopo () {
         event.preventDefault();
         
         const inputNumero = event.target.querySelector('#numero');
-
-        const numero = Number(inputNumero.value);
+        
+        const numero = parseFloat(inputNumero.value.replace(",", "."));
         parImpar(numero);
     })
 
